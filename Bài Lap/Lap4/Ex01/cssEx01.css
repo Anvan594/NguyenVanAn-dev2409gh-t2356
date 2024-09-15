@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+}
+
+ul {
+    list-style: none;
+    list-style-type: disc;
+}
+
+li:nth-child(1), li:nth-child(2) {
+    color: blue;
+}
+
+li:nth-child(3), li:nth-child(4) {
+    color: red;
+    list-style-type: decimal;
+}
