@@ -450,19 +450,12 @@ main {
   .home-banner {
     padding-top: 22rem;
   }
-}
-@media (min-width: 576px) {
-  body,
-  html {
-    font-size: 16px;
+  nav ul li a { 
+    font-size: 6px;;
   }
-  a,
-  i,
-  p {
-    font-size: 16px;
-  }
-  .home-banner {
-    padding-top: 22rem;
+  header .logo a img{
+    width: 50px;
+    height: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -478,6 +471,13 @@ main {
   .home-banner {
     padding-top: 22rem;
   }
+  nav ul li a { 
+    font-size: 8px;;
+  }
+  header .logo a img{
+    width: 60px;
+    height: 100%;
+  }
 }
 @media (min-width: 922px) {
   body,
@@ -491,6 +491,13 @@ main {
   }
   .home-banner {
     padding-top: 22rem;
+  }
+  nav ul li a { 
+    font-size: 10px;;
+  }
+  header .logo a img{
+    width: 70px;
+    height: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -506,6 +513,13 @@ main {
   .home-banner {
     padding-top: 22rem;
   }
+  nav ul li a { 
+    font-size: 12px;;
+  }
+  header .logo a img{
+    width: 80px;
+    height: 100%;
+  }
 }
 @media (min-width: 1400px) {
   body,
@@ -519,6 +533,13 @@ main {
   }
   .home-banner {
     padding-top: 22rem;
+  }
+  nav ul li a { 
+    font-size: 14px;;
+  }
+  header .logo a img{
+    width: 100px;
+    height: 100%;
   }
 }
 @media (min-width: 1600px) {
@@ -534,4 +555,77 @@ main {
   .home-banner {
     padding-top: 22rem;
   }
+  nav ul li a { 
+    font-size: 16px;;
+  }
+  header .logo a img{
+    width: 120px;
+    height: 100%;
+  }
+}
+.box-content{
+    background-color: #f3f3f3;
+    padding: 5rem 0;
+}
+.banner-page_image img{
+    height: 25rem;
+    width: 100%;
+}
+.banner-page_title{
+    position: absolute;
+    top: 12rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-page_title img{
+    display: block;
+    width: 6rem;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+.banner-page_title p{
+    font-size: 2rem;
+    color: #fff;
+}
+.box-about{
+    text-align: center;
+}
+.wrapper-box{
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    top: 5rem;
+    padding: 3rem;
+}
+.wrapper-box h4{
+    font-weight:"blod";
+    color: #0f0250;
+}
+.h6_1 {
+    width: 10rem;
+    content: "";
+    border-top: 0.3rem solid #d18623;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+  .h6 {
+    width: 4rem;
+    content: "";
+    border-top: 0.3rem solid #d18623;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+footer h4{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+footer h2{
+    font-size: 24px;
+}
+footer h1{
+    font-size: 20px;
 }
