@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Array Javascript</h1>
+    <p>sử dụng kèm for</p>
+    <p id="demo"></p>
+    <script>
+        const hoaqua = ["chuối", "cam", "quýt", "bưởi"];
+        let flen = hoaqua.length;
+        let text = "<ul>";
+        for (let i = 0; i < flen; i++) {
+            text += "<li>" + hoaqua[i] + "</li>";
+        }
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>
