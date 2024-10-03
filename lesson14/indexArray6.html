@@ -6,15 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>javascript Array</h1>
-    <h2>sử dụng phương thức push()</h2>
-    <button onclick="myfunction()">add</button>
+    <h1>javascript array</h1>
+    <h2>phương thức push()</h2>
+    <button onclick="myFunction()">add</button>
     <p id="demo"></p>
+
     <script>
-        const hoaqua = ["chuối ", "cam ", "quýt ", "bưởi "];
+        const hoaqua=["chuối","cam","quýt","bưởi"];
         document.getElementById("demo").innerHTML=hoaqua;
-        function myfunction(){
-            hoaqua.push("Đu Đủ");
+        function myFunction(){
+            hoaqua.push("đu đủ");
             document.getElementById("demo").innerHTML=hoaqua;
         }
     </script>

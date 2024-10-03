@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>method obj</h1>
+    <p>hiển thị 1 biến</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <h1 style="font-size: 3rem;">
+        <p id="demo2"></p>
+    </h1>
+    <p>phương thức có hàm xác định lưu trữ trong giá trị thuộc tính</p>
+    <p id="demo3"></p>
+
+    <script>
+        let car = " BMW";
+        document.getElementById("demo").innerHTML = "anh đón em bằng xe" + car;
+        const car1 = { type: " VinF ", model: " V9 ", color: " black " }
+        document.getElementById("demo1").innerHTML = "Anh đón em bằng xe" + car1.type + "chức năng" + car1.model + "nó có màu" + car1.color + "nhé em !"
+        const person = {
+            firstName : "Đan",
+            lastName : "Lê",
+            fullName:function(){
+                return this.firstName + " "+this.lastName;
+            }
+        };
+        person.name = "Lê Chập Mạch";
+        person.firstName = "Đan";
+        person.lastName = "Lê";
+        person.age = 21;
+        person.address = "Hải Phòng Fake";
+        person.gender = "female";
+
+        delete person.age;
+
+        const x=person;
+        x.birth =2003;
+        document.getElementById("demo2").innerHTML = "Tôi tên là " + person.name + " tôi vừa mới " + person.age + " quê tôi " + person.address
+        document.getElementById("demo3").innerHTML=person.fullName()+" tôi sinh năm "+x.birth;
+
+    </script>
+</body>
+
+</html>
