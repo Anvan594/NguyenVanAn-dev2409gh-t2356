@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <p class="p1">Xóa p trong 3 giây</p>
+    <button class="btn">đợi 3s nhé</button>
+    <button class="btn2">mở</button>
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $(".p1").hide(2000);
+            });
+            $(".btn2").click(function () {
+                $(".p1").toggle();
+            });
+            /*document.body.addEventListener('click', function () {
+                location.reload();
+            });*/
+        })
+    </script>
+</body>
+
+</html>

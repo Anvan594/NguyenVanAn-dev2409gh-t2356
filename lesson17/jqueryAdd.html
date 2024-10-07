@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <p>đây là dòng 1</p>
+    <p>đây là dòng 2</p>
+    <ul>
+        <li>Sản Phẩm 1</li>
+        <li>Sản Phẩm 2</li>
+        <li>sản Phẩm 3</li>
+    </ul>
+    <button id="btn1">Thêm</button>
+    <button id="btn2">Thêm</button>
+    <button id="btn3">Thêm trước</button>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("p").after("<b>Thêm nữa đi</b>")
+            })
+            $("#btn3").click(function () {
+                $("p").prepend("<b>Thêm nữa đi</b>")
+            })
+            $("#btn2").click(function () {
+                $("ul").before("<li>Thêm nữa đi</li>")
+            })
+        })
+    </script>
+</body>
+
+</html>

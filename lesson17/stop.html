@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        #flip,
+        #panel {
+            padding: 5px;
+            font-size: 2rem;
+            text-align: center;
+            background-color: red;
+            color: white;
+            border: 2px solid green;
+            border-radius: 5px;
+        }
+        #panel{
+            display: none;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="stop">Dừng</button>
+    <div id="flip">bấm vào đây để gửi lời yêu thương</div>
+    <div id="panel">
+        <p>Anh</p>
+        <p>có</p>
+        <p>Bầu</p>
+        <p>Rồi</p>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown(1000).slideUp(1000);
+            });
+            $("#stop").click(function () {
+                $("#panel").stop();
+            });
+
+        })
+    </script>
+</body>
+
+</html>

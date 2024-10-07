@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <label for="">Name</label>
+    <input type="text" name="name">
+    <label for="">Email</label>
+    <input type="text" name="email">
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","yellow");
+            });//cách 1
+            $("input").blur(function(){
+                $(this).css("background-color","green");
+            });//cách2
+            $("label").on({
+                click:function(){
+                    $(this).css("background-color","aqua")
+                },
+                hover :function(){
+                    $(this).css("background-color","red")
+                }
+            });
+        })
+    </script>
+</body>
+</html>

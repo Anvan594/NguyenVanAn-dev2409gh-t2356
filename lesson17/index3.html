@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <p>List 1</p>
+    <ul>
+        <li>
+            xoài
+        </li>
+        <li>Cam</li>
+        <li>chuối</li>
+    </ul>
+    <p>List 2</p>
+    <ul>
+        <li>meo</li>
+        <li>meo</li>
+        <li>meo</li>
+        <li>meo</li>
+        <li>meo</li>
+    </ul>
+    <p><a href="http//facebook.com">Nguyễn Văn An</a></p>
+    <input type="text" placeholder="Xóa input nhé">
+    <input type="number" placeholder="Xóa number nhé">
+    <h2>đây là thẻ h2</h2>
+    <p>đây là thẻ p</p>
+    <p>sadasd</p>
+    <p class="intro">P có class là intro</p>
+    <button class="btn1">click</button>
+    <button class="btn2">click2</button>
+    <button class="btn3">click3</button>
+    <button class="btn4">click4</button>
+    <button class="btn5">click5</button>
+    <button class="btn6">click6</button>
+    <button class="btn7">click7</button>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $("*").hide();
+            });
+            $(".btn2").click(function () {
+                $(this).hide();
+            });
+            $(".btn3").click(function () {
+                $("p.intro").hide();
+            });
+            $(".btn4").click(function () {
+                $("p:first").hide();
+            });
+            $(".btn5").click(function () {
+               $("ul li:first-child").hide();
+            });
+            $(".btn6").click(function () {
+                $("[href]").hide();
+             });
+             $(".btn7").click(function () {
+                $("input[type='text']").hide();
+             })
+        })
+    </script>
+</body>
+
+</html>
