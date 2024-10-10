@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapguide07-bài thực hàng số 2</title>
+    <style>
+        .btn button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="zone1">
+        <h1>chọn màu chữ</h1>
+        <div class="btn">
+            <button value="red">Đỏ</button>
+            <button value="blue">Xanh</button>
+            <button value="yellow">Vàng</button>
+            <button value="gray">Ghi</button>
+            <button value="violet">Tím</button>
+        </div>
+        <div class="noi-dung">
+            <p>Lập trình web với php và mySql</p>
+        </div>
+        <button id="reset">reset</button>
+    </section>
+    <!--nhúng jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //test jquery
+            alert("xin chào tôi là jquery");
+
+            //lấy màu từ thuộc tính value của button
+
+            //tô màu button
+            $('.btn > button').each(function () {
+                let varColor = $(this).attr('value');
+                //tô màu ngay cho button
+                $(this).css({
+                    "background": varColor,
+                    'border': '1px solid ' + varColor,
+                    'padding': '.5rem 1rem'
+                });
+            })
+            //tô màu chữ nội dung
+            $('.btn button').click(function () {
+                let color = $(this).attr('value');
+                //set color cho nội dung
+                $('.noi-dung p').css({
+                    "color": color
+                })
+            });
+            //cách 1
+            /*$('#reset').click(function(){
+                $('.noi-dung p').css({
+                    "color": 'black'
+                })
+            })*/
+            //hoặc
+            $('#zone1 > button').click(function () {
+                $('.noi-dung p').css({
+                    "color": 'black'
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

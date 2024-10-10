@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 30px;
+            width: 20px;
+            display: flex;
+            border: 0px solid;
+        }
+
+        button {
+            border: 1px solid gray;
+            margin-right: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .noi-dung {
+            width: 100%;
+            height: 300px;
+            border: 1px solid gray;
+        }
+
+        .noi-dung p {
+            display: none;
+        }
+
+        .hien-thi {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <button id="HTML">HTML</button>
+        <button id="CSS">CSS</button>
+        <button id="JQUERY">JQUERY</button>
+        <button id="PHP">PHP</button>
+    </div>
+    <div class="noi-dung">
+        <p class="HTML">Đây là HTML</p>
+        <p class="CSS">Đây là CSS</p>
+        <p class="JQUERY">Đây là JQUERY</p>
+        <p class="PHP">Đây là PHP</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.nav > button').click(function () {
+                $('.nav > button').each(function () {
+                    $(this).css('background', "none")
+                })
+
+                let class_p = $(this).attr('id')
+                $(this).css({
+                    'background': '#9900CC',
+                    'border': "1px solid",
+                    'border-top-left-radius': "5px",
+                    'border-top-right-radius': "5px"
+
+                })
+                $('p').css('display', "none")
+                $("." + class_p).css('display', "block")
+            })
+        })
+    </script>
+</body>
+
+</html>

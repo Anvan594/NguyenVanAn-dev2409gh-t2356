@@ -1,0 +1,19 @@
+#libray
+--local: tải về project:https://releases.jquery.com/
+--api: (cdn, cloud, ...):<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    --: Nhúng vào phần head; khuyến nghị dùng ở cuối trang html, trong thẻ đóng body
+#Syntax:
+$(document).ready(function(){
+    --các câu lệnh sử dụng với jQuery
+
+    -- tương tác : 
+        $(selector):action(...)
+            -- selector:html, tag, id, class-name, css selector, ...
+            --ví dụ:
+                $('#zone1').css("color",red);
+                $('#zone1').css({
+                    'color':'red',
+                    'background-color':'green'
+                });
+
+})

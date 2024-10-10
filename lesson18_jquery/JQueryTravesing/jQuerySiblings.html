@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        div cha
+        <p>phần tử p</p>
+        <span>thành phần span</span>
+        <h2>thành phần h2</h2>
+        <h3>thành phần h3</h3>
+        <p>phần tử p</p>
+        <p>phần tử p</p>
+        <p>phần tử p</p>
+        <h4>Thành Phần h4</h4>
+        <p>phần tử p</p>
+        <p>phần tử p</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h3").siblings("h2").css({"color":"red","border":"2px solid"})
+            //$("h3").nextAll().css({"color":"red","border":"2px solid"})
+            $("h3").nextUntil("h4").css({"color":"red","border":"2px solid"})
+        })
+    </script>
+</body>
+
+</html>
