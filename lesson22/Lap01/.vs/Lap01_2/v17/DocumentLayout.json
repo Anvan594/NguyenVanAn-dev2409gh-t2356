@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\anvan\\source\\repos\\Lap01_2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F891796C-BB17-4882-8012-EE50A3AF8E15}|Lap01_3\\Lap01_Ex1.csproj|c:\\users\\anvan\\source\\repos\\lap01_2\\lap01_3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F891796C-BB17-4882-8012-EE50A3AF8E15}|Lap01_3\\Lap01_Ex1.csproj|solutionrelative:lap01_3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7099853D-DB93-4C21-B529-1C34F4D2A482}|Lap01_Ex2\\Lap01_Ex2.csproj|c:\\users\\anvan\\source\\repos\\lap01_2\\lap01_ex2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7099853D-DB93-4C21-B529-1C34F4D2A482}|Lap01_Ex2\\Lap01_Ex2.csproj|solutionrelative:lap01_ex2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anvan\\source\\repos\\Lap01_2\\Lap01_3\\Program.cs",
+              "RelativeDocumentMoniker": "Lap01_3\\Program.cs",
+              "ToolTip": "C:\\Users\\anvan\\source\\repos\\Lap01_2\\Lap01_3\\Program.cs",
+              "RelativeToolTip": "Lap01_3\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T03:37:46.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\anvan\\source\\repos\\Lap01_2\\Lap01_Ex2\\Program.cs",
+              "RelativeDocumentMoniker": "Lap01_Ex2\\Program.cs",
+              "ToolTip": "C:\\Users\\anvan\\source\\repos\\Lap01_2\\Lap01_Ex2\\Program.cs",
+              "RelativeToolTip": "Lap01_Ex2\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T03:22:35.767Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
